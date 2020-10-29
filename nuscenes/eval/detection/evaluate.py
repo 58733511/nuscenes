@@ -88,11 +88,11 @@ class NuScenesEval:
 
         # Filter boxes (distance, points per box, etc.).
         if verbose:
-            print('Filtering predictions')
-        self.pred_boxes = filter_eval_boxes(nusc, self.pred_boxes, self.cfg.class_range, verbose=verbose)
+            print('no Filtering predictions')
+        #self.pred_boxes = filter_eval_boxes(nusc, self.pred_boxes, self.cfg.class_range, verbose=verbose)
         if verbose:
-            print('Filtering ground truth annotations')
-        self.gt_boxes = filter_eval_boxes(nusc, self.gt_boxes, self.cfg.class_range, verbose=verbose)
+            print('no Filtering ground truth annotations')
+        #self.gt_boxes = filter_eval_boxes(nusc, self.gt_boxes, self.cfg.class_range, verbose=verbose)
 
         self.sample_tokens = self.gt_boxes.sample_tokens
 
